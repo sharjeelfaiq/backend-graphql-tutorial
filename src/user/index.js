@@ -1,5 +1,7 @@
 import { gql } from "graphql-tag";
+import { PrismaClient } from "@prisma/client";
 
+const prisma = new PrismaClient();
 export const userTypeDefs = gql`
   type User {
     id: ID!
